@@ -1,8 +1,13 @@
 alphabet: {a,b}
 start: q0
-accepting: {q0,q3}
-q0 (a -> q1) (b -> q0)
-q1 (a -> q2) (b -> q4)
-q2 (a -> q3) (b -> q4)
-q3 (a -> q3) (b -> q3)
-q4 (a -> q1) (b -> q4)
+accepting: {q6,ac}
+q0 (a -> q1) (b -> q6)
+q1 (a -> q2) (b -> q1)
+q2 (a -> q3) (b -> q1)
+q3 (a -> q4) (b -> q6)
+q4 (a -> ac) (b -> ac) 
+ac (a -> ac) (b -> ac) 
+q6 (a -> q7) (b -> q6)
+q7 (a -> q8) (b -> q7)
+q8 (a -> q9) (b -> q7)
+q9 (a -> ac) (b -> ac)
