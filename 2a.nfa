@@ -1,7 +1,7 @@
 alphabet: {a,b}
 start: q0
 accepting: {q6,ac}
-q0 (a -> q1) (b -> q6)
+q0 (a -> q1) (_ -> q6)
 q1 (a -> q2) (b -> q1)
 q2 (a -> q3) (b -> q1)
 q3 (a -> q4) (b -> q6)
@@ -10,4 +10,4 @@ ac (a -> ac) (b -> ac)
 q6 (a -> q7) (b -> q6)
 q7 (a -> q8) (b -> q7)
 q8 (a -> q9) (b -> q7)
-q9 (a -> ac) (b -> ac)
+q9 (b -> ac)
