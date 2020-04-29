@@ -1,0 +1,38 @@
+digraph {
+  node [shape=point]; __start;
+  node [shape = doublecircle]; q0;
+  node [shape = doublecircle]; q1;
+  node [shape = doublecircle]; q2;
+  node [shape = circle]; q3;
+  node [shape = circle]; q4;
+  node [shape = circle]; q5;
+  node [shape = circle]; q6;
+  node [shape = circle]; q7;
+  node [shape = circle]; q8;
+  node [shape = circle]; q9;
+  node [shape = circle]; q10;
+
+  __start -> q0 [arrowhead = empty];
+  q0 -> q3 [label = "a"];
+  q0 -> q4 [label = "b"];
+  q1 -> q0 [label = "a"];
+  q1 -> q9 [label = "b"];
+  q2 -> q10 [label = "a"];
+  q2 -> q4 [label = "b"];
+  q3 -> q5 [label = "a"];
+  q3 -> q2 [label = "b"];
+  q4 -> q10 [label = "a"];
+  q4 -> q9 [label = "b"];
+  q5 -> q6 [label = "a"];
+  q5 -> q7 [label = "b"];
+  q6 -> q1 [label = "a"];
+  q6 -> q8 [label = "b"];
+  q7 -> q10 [label = "a"];
+  q7 -> q2 [label = "b"];
+  q8 -> q10 [label = "a"];
+  q8 -> q7 [label = "b"];
+  q9 -> q10 [label = "a"];
+  q9 -> q8 [label = "b"];
+  q10 -> q10 [label = "a"];
+  q10 -> q10 [label = "b"];
+}
